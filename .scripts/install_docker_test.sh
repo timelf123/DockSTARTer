@@ -13,7 +13,8 @@ install_docker_test() {
         local GET_DOCKER
         GET_DOCKER=$(mktemp) || fatal "Failed to create temporary storage for docker test build install."
         curl -fsSL test.docker.com -o "${GET_DOCKER}" > /dev/null 2>&1 || fatal "Failed to get docker test build install script."
-        sh "${GET_DOCKER}" > /dev/null 2>&1 || fatal "Failed to install docker test build."
+        #sh "${GET_DOCKER}" > /dev/null 2>&1 || fatal "Failed to install docker test build."
+        sh "${GET_DOCKER}" || fatal "Failed to install docker test build."
         rm -f "${GET_DOCKER}" || warning "Temporary test.docker.com file could not be removed."
     fi
     PROMPT=${PREPROMPT:-}
