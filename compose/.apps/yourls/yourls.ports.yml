@@ -1,0 +1,4 @@
+services:
+  yourls:
+    ports:
+      - ${YOURLS_PORT_80}:80

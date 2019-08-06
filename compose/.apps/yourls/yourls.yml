@@ -1,0 +1,22 @@
+services:
+  yourls:
+    container_name: yourls
+    environment:
+      - TZ=${TZ}
+      - YOURLS_DB_HOST=
+      - YOURLS_DB_NAME=
+      - YOURLS_DB_PASS=
+      - YOURLS_DB_USER=
+      - YOURLS_PASS=
+      - YOURLS_SITE=
+      - YOURLS_TABLE_PREFIX=
+      - YOURLS_USER=
+    logging:
+      driver: json-file
+      options:
+        max-file: ${DOCKERLOGGING_MAXFILE}
+        max-size: ${DOCKERLOGGING_MAXSIZE}
+    restart: unless-stopped
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ${DOCKERSHAREDDIR}:/shared

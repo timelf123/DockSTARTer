@@ -1,0 +1,3 @@
+services:
+  yourls:
+    network_mode: ${YOURLS_NETWORK_MODE}

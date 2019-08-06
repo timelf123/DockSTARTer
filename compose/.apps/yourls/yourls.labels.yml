@@ -1,0 +1,17 @@
+services:
+  yourls:
+    labels:
+      com.dockstarter.appinfo.description: "Companion to Sonarr to manage and download subtitles"
+      com.dockstarter.appinfo.nicename: "Bazarr"
+      com.dockstarter.appvars.yourls_backup_config: "true"
+      com.dockstarter.appvars.yourls_enabled: "false"
+      com.dockstarter.appvars.yourls_network_mode: ""
+      com.dockstarter.appvars.yourls_port_80: "8089"
+      com.dockstarter.appvars.YOURLS_DB_HOST: ""
+      com.dockstarter.appvars.YOURLS_DB_NAME: ""
+      com.dockstarter.appvars.YOURLS_DB_PASS: ""
+      com.dockstarter.appvars.YOURLS_DB_USER: ""
+      com.dockstarter.appvars.YOURLS_PASS: ""
+      com.dockstarter.appvars.YOURLS_SITE: ""
+      com.dockstarter.appvars.YOURLS_TABLE_PREFIX: ""
+      com.dockstarter.appvars.YOURLS_USER: ""
